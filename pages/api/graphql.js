@@ -50,7 +50,7 @@ const apolloServer = new ApolloServer({
         })
 
         if (!dbClient.isConnected()) await dbClient.connect()
-        db = dbClient.db('next-graphql') // database name
+        db = dbClient.db('agnm-db') // database name
       } catch (e) {
         console.log('--->error while connecting via graphql context (db)', e)
       }
